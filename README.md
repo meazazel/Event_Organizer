@@ -6,6 +6,7 @@
 - **Meaza Zelalem**
 - **Mahder Samson**
 - **Mihiret Hambissa**
+- **Nardos Assefa**
 
 ---
 
