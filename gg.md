@@ -1,10 +1,19 @@
-# Berhan Bank CFMS Data Flow Diagrams
-
-## Level 0 DFD (Context Diagram)
+# Berhan Bank CFMS Level 0 DFD
 
 ```mermaid
 flowchart TD
-    A[Customer] -->|Submit Loan Application| B[Berhan Bank CFMS]
-    B -->|Provide Loan Status/Approval| A
-    C[Bank Staff] -->|Process Application & Update Records| B
-    B -->|Generate Reports| D[Management]
+    %% External Entities
+    A[Customer] -->|Submit credit applications, documents| B[CFMS]
+    B -->|Loan approval/rejection, account updates| A
+
+    C[Loan Officer] -->|Process credit files| B
+    B -->|Loan status updates, approval alerts| C
+
+    D[Manager] -->|Request reports| B
+    B -->|Financial, loan status, portfolio reports| D
+
+    E[Cashier] -->|Send transaction summaries| B
+    B -->|Daily transaction logs| E
+
+    F[Admin] -->|Update user access| B
+    B -->|Audit logs, error reports| F
