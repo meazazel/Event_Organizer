@@ -1,19 +1,24 @@
-# Berhan Bank CFMS Level 0 DFD
+# Berhan Bank CFMS Level 1 DFD
 
 ```mermaid
 flowchart TD
     %% External Entities
-    A[Customer] -->|Submit credit applications, documents| B[CFMS]
-    B -->|Loan approval/rejection, account updates| A
+    A[Customer] -->|Submit credit application & documents| B1[Credit File Registration]
+    B1 -->|Acknowledgement, file ID| A
 
-    C[Loan Officer] -->|Process credit files| B
-    B -->|Loan status updates, approval alerts| C
+    C[Loan Officer] -->|Verify & update files| B2[Credit File Management]
+    B2 -->|File status updates| C
 
-    D[Manager] -->|Request reports| B
-    B -->|Financial, loan status, portfolio reports| D
+    B1 --> B2
+    B2 --> B3[Approval Workflow]
+    B3 -->|Approval/Rejection| A
+    B3 -->|Approval notifications| B2
 
-    E[Cashier] -->|Send transaction summaries| B
-    B -->|Daily transaction logs| E
+    D[Manager] -->|Request reports| B4[Reporting Module]
+    B4 -->|Financial, loan status, portfolio reports| D
 
-    F[Admin] -->|Update user access| B
-    B -->|Audit logs, error reports| F
+    E[Cashier] -->|Send transaction summaries| B2
+    B2 -->|Daily transaction logs| E
+
+    F[Admin] -->|Update user roles & access| B5[Security & Audit]
+    B5 -->|Audit logs, error reports| F
