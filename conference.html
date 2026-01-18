@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Business Conference Organizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conference.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="conference.js" defer></script>
+</head>
+<body>
+
+<!-- HERO -->
+
+<div class="hero-content hero-text-bg">
+    <h1>Global Business Conference Organizer</h1>
+    <p>We Bring Your Vision to Life – Venue, Setup, and Experience Handled</p>
+    <a href="#contact" class="btn-register">Contact Us Today</a>
+</div>
+
+<!-- ABOUT -->
+<section class="about-conference scroll-animate delay-2">
+    <h2>Why Choose Us</h2>
+    <p style="max-width:600px; text-align:left; margin-left:0;">
+        As experienced conference organizers, we handle every detail — from selecting the ideal venue, designing a memorable experience,
+        to managing the event seamlessly. Your focus is connecting with your guests; we ensure everything else runs perfectly.
+    </p>
+</section>
+
+<!-- VENUE HIGHLIGHTS -->
+<section class="conference-gallery scroll-animate delay-3">
+    <h2>Our Event Venues</h2>
+    <div class="gallery-grid">
+        <div class="floating-img"><img src="C:\Users\M\Desktop\businnes\conferenceupdowm.jpg" alt="Rooftop Venue"></div>
+        <div class="floating-img"><img src="C:\Users\M\Desktop\businnes\updown2.jpg" alt="Luxury Hall"></div>
+        <div class="floating-img"><img src="C:\Users\M\Desktop\businnes\updown3.jpg" alt="Audience Networking"></div>
+        <div class="floating-img"><img src="C:\Users\M\Desktop\businnes\updown4.jpg" alt="Elegant Setup"></div>
+    </div>
+</section>
+
+<!-- EXPERIENCE & SERVICES -->
+<section class="services-section scroll-animate delay-4">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <!-- Venue Selection -->
+        <div class="service-card service-horizontal">
+            <div class="service-media">
+                <img src="C:\Users\M\Desktop\businnes\conference vene.jpg" alt="Venue Selection">
+                <div class="animation-box anim-1"></div>
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-map-marker-alt"></i> Venue Selection</h3>
+                <p>We select premium venues like rooftops, grand halls, and elegant spaces tailored to your event’s style.</p>
+            </div>
+        </div>
+
+        <!-- Professional Setup -->
+        <div class="service-card service-horizontal reverse">
+            <div class="service-media">
+                <img src="C:\Users\M\Desktop\businnes\proffestional setup.jpg" alt="Professional Setup">
+                <div class="animation-box anim-2"></div>
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-lightbulb"></i> Professional Setup</h3>
+                <p>From stage design to lighting, AV equipment, and seating arrangements – we ensure flawless execution.</p>
+            </div>
+        </div>
+
+        <!-- Event Management -->
+        <div class="service-card service-horizontal">
+            <div class="service-media">
+                <img src="C:\Users\M\Desktop\businnes\event mamagment.jpg" alt="Event Management">
+                <div class="animation-box anim-3"></div>
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-tasks"></i> Full Event Management</h3>
+                <p>We coordinate every detail from planning to execution so you can focus on your attendees and business goals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section scroll-animate delay-5">
+    <h2>Clients Love Our Work</h2>
+    <div class="testimonial-card">
+        <p>"The event was flawless! They handled everything from venue to execution – highly recommend."</p>
+        <span>— Sarah Thompson</span>
+    </div>
+    <div class="testimonial-card">
+        <p>"Professional, creative, and reliable. Our conference guests were impressed."</p>
+        <span>— Mark Allen</span>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta-conference scroll-animate delay-6" id="contact">
+    <h2>Ready to Host Your Conference?</h2>
+    <p>Contact us and let our expert team create an unforgettable experience for your attendees.</p>
+    <a href="#" class="btn-register">Get in Touch</a>
+
+    
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Global Business Conference Organizer. All Rights Reserved.</p>
+</footer>
+
+<!-- CONFERENCE BOOKING MODAL -->
+<div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <h2>Book Your Conference</h2>
+        <p>Tell us about your event and we’ll get back to you.</p>
+
+        <form id="conferenceBookingForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Company / Organization" required>
+            <input type="date" required>
+
+            <select required>
+                <option value="">Conference Type</option>
+                <option>Business</option>
+                <option>Technology</option>
+                <option>Academic</option>
+                <option>Startup</option>
+            </select>
+
+            <textarea placeholder="Event Details" rows="4" required></textarea>
+            <button type="submit" class="btn-register">Submit Booking</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
