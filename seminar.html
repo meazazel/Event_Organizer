@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Educational Seminars</title>
+<link rel="stylesheet" href="seminar.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <a href="education.html">Home</a>
+  <a href="academic.html">Academic</a>
+  <a href="seminar.html">Seminars</a>
+  <a href="hackathon.html">Hackathons</a>
+  <a href="stem.html">STEM Fairs</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-conference scroll-animate">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Educational Seminars</h1>
+    <p>Expert Talks • Knowledge Sharing • Professional Growth</p>
+    <a href="#application" class="btn-register">Host a Seminar</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-conference scroll-animate">
+  <h2>Why Our Seminars</h2>
+  <p>
+    Our educational seminars are designed to connect students,
+    professionals, and academics with subject-matter experts.
+    Each seminar focuses on structured knowledge delivery,
+    interactive discussion, and real-world relevance.
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section class="conference-gallery scroll-animate">
+  <div class="gallery-grid">
+    <div class="floating-img">
+      <img src="seminars.webp" alt="Seminar Session">
+    </div>
+    <div class="floating-img">
+      <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678" alt="Guest Speaker">
+    </div>
+    <div class="floating-img">
+      <img src="seminar2.webp" alt="Audience Interaction">
+    </div>
+    <div class="floating-img">
+      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" alt="Panel Discussion">
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-conference scroll-animate">
+  <h2>Bring Experts to Your Institution</h2>
+  <a href="#application" class="btn-register">Request a Seminar</a>
+</section>
+
+<!-- FORM -->
+<section class="form-section scroll-animate" id="application">
+  <h2>Seminar Hosting Application</h2>
+  <p class="form-intro">
+    Institutions may formally request us to organize
+    an educational seminar tailored to their needs.
+  </p>
+
+  <form class="event-form" id="seminarForm">
+
+    <div class="form-group">
+      <label>Organization / Institution Name</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Contact Email</label>
+      <input type="email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Seminar Topic</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Preferred Date</label>
+      <input type="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Expected Audience Size</label>
+      <input type="number" min="1" required>
+    </div>
+
+    <div class="form-group">
+      <label>Additional Notes</label>
+      <textarea rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">
+      Submit Application
+    </button>
+
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Educational Events</p>
+</footer>
+
+<script src="seminar.js"></script>
+</body>
+</html>
