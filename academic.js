@@ -16,6 +16,6 @@ window.addEventListener("load", revealOnScroll);
 // Seminar form handler
 document.getElementById("seminarForm").addEventListener("submit", function(e){
     e.preventDefault();
-    alert("Seminar hosting application submitted successfully.");
+    window.alert("Application submitted successfully.");
     this.reset();
 });

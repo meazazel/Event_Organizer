@@ -13,5 +13,5 @@ window.addEventListener("load", reveal);
 
 document.getElementById("eduForm").addEventListener("submit", e => {
     e.preventDefault();
-    alert("Educational event application submitted successfully.");
+    window.alert("Educational event application submitted successfully.");
 });
