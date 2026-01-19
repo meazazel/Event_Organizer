@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wedding Planning</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- HERO -->
+ <body >
+
+<section class="hero" style="background-image: url('Wedding\ bg.jpg'); background-attachment: scroll; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Your Dream Wedding</h1>
+        <p>Love, elegance, and unforgettable memories — beautifully planned.</p>
+        <button class="btn" onclick="openBooking('Wedding')">Book Now</button>
+
+        <div class="cards" onclick="openBooking('Wedding')">
+</div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2 class="section-title">About Our Weddings</h2>
+    <p class="about-text">
+        Every love story is unique. We design weddings that reflect your journey,
+        blending beauty, tradition, and modern elegance.
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section>
+    <h2 class="section-title">Wedding Moments</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="Destination Wedding.jpg">
+        </div>
+        <div class="gallery-item">
+            <img src="Elegant Wedding.jpg">
+        </div>
+        <div class="gallery-item">
+            <img src="Wedding 1 (1).jpg">
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="Wedding Decor.jpg">
+            <div class="service-info">
+                <h3>Decoration & Styling</h3>
+                <p>
+                    Floral arrangements, lighting, color themes, and venue styling
+                    designed to match your vision.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="Wedding reception.jpg">
+            <div class="service-info">
+                <h3>Reception Planning</h3>
+                <p>
+                    Catering coordination, seating plans, entertainment, and smooth
+                    event flow for a perfect celebration.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Let’s Create Your Perfect Day</h2>
+    <p>Your love deserves a celebration that feels magical and personal.</p>
+    <button class="btn" onclick="openBooking('Wedding')">Start Planning</button>
+
+        <div class="cards" onclick="openBooking('Wedding')">
+</section>
+
+<footer>
+    <p>&copy; 2026 Social Event Organizer</p>
+</footer>
+
+<!-- ===== BOOKING MODAL (ADD HERE) ===== -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeBooking()">&times;</span>
+        <h2>Book Your Event</h2>
+
+        <form>
+  <div class="form-group">
+    <label>Event Type</label>
+    <input type="text" id="eventType" readonly> 
+  </div>
+
+  <div class="form-group">
+    <label>Your Name</label>
+    <input type="text" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter your phone number" required>
+  </div>
+
+  <div class="form-group">
+    <label>Number of Guests</label>
+    <input type="number" placeholder="Enter number of guests" required>
+  </div>
+
+  <div class="form-group">
+    <label>Event Date</label>
+    <input type="date" required>
+  </div>
+
+  <div class="form-group">
+    <label>Special Request</label>
+    <textarea placeholder="Additional details"></textarea>
+  </div>
+
+  <button type="submit">Submit Booking</button>
+</form>
+    </div>
+</div>
+
+
+<!-- ===== END BOOKING MODAL ===== -->
+
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
