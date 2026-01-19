@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Parties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url(BD\ party.jpg);background-attachment: scroll; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Celebrate Another Year</h1>
+        <p>Fun-filled parties with style, joy, and unforgettable moments.</p>
+        <button class="btn" onclick="openBooking('Birthday')">Book Now</button>
+
+        <div class="cards" onclick="openBooking('Birthday')">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2 class="section-title">Birthday Celebrations</h2>
+    <p class="about-text">
+        Whether it's a child’s party or a milestone birthday, we create lively,
+        colorful celebrations that everyone enjoys.
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section>
+    <h2 class="section-title">Party Highlights</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="birthday.jpg">
+        </div>
+        <div class="gallery-item">
+            <img src="Birthday 1.jpg">
+        </div>
+        <div class="gallery-item">
+            <img src="Adults Birthday Party.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="BD theme (1).jpg">
+            <div class="service-info">
+                <h3>Theme & Decoration</h3>
+                <p>
+                    Balloons, banners, lighting, and creative themes for every age.
+                </p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="BD catering.jpg">
+            <div class="service-info">
+                <h3>Entertainment & Catering</h3>
+                <p>
+                    Music, games, cakes, and food services to keep the party alive.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Let’s Celebrate Together</h2>
+    <p>Turn your birthday into a joyful and colorful memory.</p>
+    <button class="btn" onclick="openBooking('Birthday')">Plan Your Party</button>
+
+        <div class="cards" onclick="openBooking('Birthday')">
+</section>
+
+<footer>
+    <p>&copy; 2026 Birthday Events</p>
+</footer>
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeBooking()">&times;</span>
+        <h2>Book Your Event</h2>
+
+        <form>
+  <div class="form-group">
+    <label>Event Type</label>
+    <input type="text" id="eventType" readonly> 
+  </div>
+
+  <div class="form-group">
+    <label>Your Name</label>
+    <input type="text" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter your phone number" required>
+  </div>
+
+  <div class="form-group">
+    <label>Number of Guests</label>
+    <input type="number" placeholder="Enter number of guests" required>
+  </div>
+
+  <div class="form-group">
+    <label>Event Date</label>
+    <input type="date" required>
+  </div>
+
+  <div class="form-group">
+    <label>Special Request</label>
+    <textarea placeholder="Additional details"></textarea>
+  </div>
+
+  <button type="submit">Submit Booking</button>
+</form>
+
+    </div>
+</div>
+<!-- ===== END BOOKING MODAL ===== -->
+
+<script src="script.js"></script>
+</body>
+</html>
