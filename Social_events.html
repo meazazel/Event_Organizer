@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<section class="hero" style="background-image:url('events.jpg');background-attachment: scroll; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Plan Your Special Event</h1>
+        <p>From joyful celebrations to meaningful moments, we handle everything with care.</p>
+    </div>
+</section>
+
+<section class="event-selector">
+    <h2 class="section-title">Choose Your Event</h2>
+
+    <div class="event-grid">
+
+        <div class="event-card" data-page="wedding.html">
+            <img src="Elegant Wedding.jpg" alt="Wedding Event">
+            <span>Wedding</span>
+        </div>
+
+        <div class="event-card" data-page="funeral.html">
+            <img src="Funeral 1 (1).jpg" alt="Funeral Event">
+            <span>Funeral</span>
+        </div>
+
+        <div class="event-card" data-page="birthday.html">
+            <img src="birthday.jpg" alt="Birthday Party">
+            <span>Birthday Party</span>
+        </div>
+
+        <div class="event-card" data-page="graduation.html">
+            <img src="graduation 1.jpg" alt="Graduation Event">
+            <span>Graduation</span>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Social Event Organizer</p>
+</footer>
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeBooking()">&times;</span>
+        <h2>Book Your Event</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+
+            <select id="eventType">
+                <option value="">Select Event</option>
+                <option>Wedding</option>
+                <option>Funeral</option>
+                <option>Birthday</option>
+                <option>Graduation</option>
+            </select>
+
+            <input type="date" required>
+            <textarea placeholder="Additional Details"></textarea>
+
+            <button class="btn" type="submit">Submit Booking</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
