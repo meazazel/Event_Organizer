@@ -1,97 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Academic Events</title>
-<link rel="stylesheet" href="education.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Academic Events</title>
+    <link rel="stylesheet" href="education.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="education.html">Home</a>
+        <a href="academic.html">Academic</a>
+        <a href="seminar.html">Seminars</a>
+        <a href="hackathon.html">Hackathons</a>
+        <a href="stem.html">STEM Fairs</a>
+      </nav>
+    </header>
 
-<header>
-<nav>
-  <a href="education.html">Home</a>
-  <a href="academic.html">Academic</a>
-  <a href="seminar.html">Seminars</a>
-  <a href="hackathon.html">Hackathons</a>
-  <a href="stem.html">STEM Fairs</a>
-</nav>
-</header>
+    <section class="hero-conference scroll-animate">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Academic Conferences</h1>
+        <p>Research • Knowledge Exchange • Scholarly Excellence</p>
+        <a href="#application" class="btn-register">Host Academic Event</a>
+      </div>
+    </section>
 
-<section class="hero-conference scroll-animate">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Academic Conferences</h1>
-    <p>Research • Knowledge Exchange • Scholarly Excellence</p>
-    <a href="#application" class="btn-register">Host Academic Event</a>
-  </div>
-</section>
+    <section class="about-conference scroll-animate">
+      <h2>Academic Excellence</h2>
+      <p>
+        Academic events provide a platform for researchers, scholars, and
+        students to present findings, exchange ideas, and foster academic
+        collaboration.
+      </p>
+    </section>
 
-<section class="about-conference scroll-animate">
-  <h2>Academic Excellence</h2>
-  <p>
-    Academic events provide a platform for researchers,
-    scholars, and students to present findings, exchange ideas,
-    and foster academic collaboration.
-  </p>
-</section>
+    <section class="conference-gallery scroll-animate">
+      <div class="gallery-grid">
+        <div class="floating-img">
+          <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
+          />
+        </div>
+        <div class="floating-img"><img src="img/academic.jpg" /></div>
+        <div class="floating-img">
+          <img
+            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655"
+          />
+        </div>
+        <div class="floating-img"><img src="img/ grad.webp" /></div>
+      </div>
+    </section>
 
-<section class="conference-gallery scroll-animate">
-  <div class="gallery-grid">
-    <div class="floating-img"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"></div>
-    <div class="floating-img"><img src="academic.jpg"></div>
-    <div class="floating-img"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655"></div>
-    <div class="floating-img"><img src="grad.webp"></div>
-  </div>
-</section>
+    <section class="cta-conference scroll-animate">
+      <h2>Advance Knowledge Together</h2>
+      <br />
+      <a href="#application" class="btn-register">Apply Now</a>
+    </section>
 
-<section class="cta-conference scroll-animate">
-  <h2>Advance Knowledge Together</h2><br>
-  <a href="#application" class="btn-register">Apply Now</a>
-</section>
+    <section class="form-section scroll-animate" id="application">
+      <h2>Academic Event Application</h2>
+      <p class="form-intro">
+        Request organization of academic conferences or symposiums.
+      </p>
 
-<section class="form-section scroll-animate" id="application">
-  <h2>Academic Event Application</h2>
-  <p class="form-intro">Request organization of academic conferences or symposiums.</p>
+      <form class="event-form" id="academicForm">
+        <div class="form-group">
+          <label>Institution Name</label>
+          <input type="text" required />
+        </div>
 
-  <form class="event-form" id="academicForm">
-    <div class="form-group">
-      <label>Institution Name</label>
-      <input type="text" required>
-    </div>
+        <div class="form-group">
+          <label>Contact Email</label>
+          <input type="email" required />
+        </div>
 
-    <div class="form-group">
-      <label>Contact Email</label>
-      <input type="email" required>
-    </div>
+        <div class="form-group">
+          <label>Event Focus Area</label>
+          <input type="text" required />
+        </div>
 
-    <div class="form-group">
-      <label>Event Focus Area</label>
-      <input type="text" required>
-    </div>
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date" required />
+        </div>
 
-    <div class="form-group">
-      <label>Preferred Date</label>
-      <input type="date" required>
-    </div>
+        <div class="form-group">
+          <label>Expected Attendees</label>
+          <input type="number" required />
+        </div>
 
-    <div class="form-group">
-      <label>Expected Attendees</label>
-      <input type="number" required>
-    </div>
+        <div class="form-group">
+          <label>Additional Notes</label>
+          <textarea rows="4"></textarea>
+        </div>
 
-    <div class="form-group">
-      <label>Additional Notes</label>
-      <textarea rows="4"></textarea>
-    </div>
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </form>
+    </section>
 
-    <button type="submit" class="btn-submit">Submit Application</button>
-  </form>
-</section>
+    <footer>
+      <p>© 2026 Educational Events</p>
+    </footer>
 
-<footer>
-  <p>© 2026 Educational Events</p>
-</footer>
-
-<script src="academic.js"></script>
-</body>
+    <script src="academic.js"></script>
+  </body>
 </html>
