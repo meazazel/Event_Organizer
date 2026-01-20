@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI');
+
+/* ---------------- GLOBAL RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --primary: rgb(255, 0, 221);
+    --primary-hover: rgb(255, 80, 235);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background: white;
+    color: black;
+}
+
+/* ---------------- NAV ---------------- */
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 10%;
+    z-index: 100;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* ---------------- HERO ---------------- */
+.hero-conference {
+    height: 80vh;
+    background: url("edu.webp") center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255,0,221,0.15), rgba(0,0,0,0.25));
+    animation: overlayShift 10s infinite linear;
+}
+
+@keyframes overlayShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn-register,
+.btn-submit {
+    background: var(--primary);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.btn-register:hover,
+.btn-submit:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px);
+}
+
+/* ---------------- ABOUT ---------------- */
+section {
+    padding: 70px 10%;
+}
+
+.about-conference h2 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--primary);
+}
+
+.about-conference p {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ---------------- GALLERY ---------------- */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.floating-img {
+    width: 250px;
+    height: 160px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: transform 0.6s ease;
+}
+
+.floating-img:hover {
+    transform: translateY(-12px) rotateX(6deg);
+}
+
+.floating-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------- FORM ---------------- */
+.form-section {
+    text-align: center;
+}
+
+.form-section h2 {
+    color: var(--primary);
+}
+
+.form-intro {
+    margin-bottom: 30px;
+}
+
+.event-form {
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.9s ease;
+}
+/* Scroll Progress */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: rgb(255, 0, 221);
+  z-index: 9999;
+}
+
+/* Event Selector */
+.event-selector {
+  text-align: center;
+}
+
+.selector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.selector-card {
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.selector-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,0,221,0.12),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.selector-card:hover::before {
+  opacity: 1;
+}
+
+.selector-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+}
+
+.selector-card h3 {
+  color: rgb(255, 0, 221);
+  margin-bottom: 10px;
+}
+.mission-text {
+  max-width: 960px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 2;
+  color: #111;
+  letter-spacing: 0.2px;
+}
+
+.mission-text .highlight {
+  color: rgb(255, 0, 221);
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.mission-text .highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 0, 221, 0.35);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.mission-text .highlight:hover::after {
+  transform: scaleX(1);
+}

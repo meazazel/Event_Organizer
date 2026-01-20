@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nova</title>
+<link rel="stylesheet" href="education.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="education.html">Educational Events </a>
+    <a href="academic.html">Academic</a>
+    <a href="seminar.html">Seminars</a>
+    <a href="hackathon.html">Hackathons</a>
+    <a href="stem.html">STEM Fairs</a>
+  </nav>
+</header>
+
+<section class="hero-conference scroll-animate">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+
+    <h1>Educational Event Organizer</h1>
+    <p>Academics • Seminars • Hackathons • STEM Fairs</p><br>
+    <a href="#application" class="btn-register">Host an Event</a>
+  </div>
+</section>
+
+<section class="about-conference scroll-animate">
+  <h2>What We Do</h2>
+ <p class="mission-text">
+  We design, coordinate, and manage 
+  <span class="highlight">structured educational events</span> 
+  for universities, academic institutions, and innovation hubs, 
+  ensuring that every program is guided by clearly defined objectives, 
+  rigorous academic standards, and purposeful engagement. 
+  Our approach places a strong emphasis on 
+  <span class="highlight">measurable learning outcomes</span>, 
+  interdisciplinary collaboration, and the practical application of knowledge, 
+  creating environments where participants can engage critically, 
+  exchange ideas effectively, and generate lasting academic and societal impact.
+</p>
+
+
+  
+
+</section>
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress"></div>
+
+<header>
+  <nav>
+    <a href="education.html" class="active">Home</a>
+    <a href="academic.html">Academic</a>
+    <a href="seminar.html">Seminars</a>
+    <a href="hackathon.html">Hackathons</a>
+    <a href="stem.html">STEM Fairs</a>
+  </nav>
+</header>
+
+<!-- HERO stays same -->
+
+
+
+<section class="conference-gallery scroll-animate">
+  <div class="gallery-grid">
+    <div class="floating-img"><img src="conf.webp"></div>
+    <div class="floating-img"><img src="himg.webp"></div>
+    <div class="floating-img"><img src="seminars.webp"></div>
+    <div class="floating-img"><img src="ht1.webp"></div>
+  </div>
+</section>
+<!-- INTERACTIVE EVENT SELECTOR -->
+<section class="event-selector scroll-animate">
+  <h2>Explore Our Events</h2>
+
+  <div class="selector-grid">
+    <a href="academic.html" class="selector-card">
+      <h3>Academic</h3>
+      <p>Conferences & symposiums</p>
+    </a>
+
+    <a href="seminar.html" class="selector-card">
+      <h3>Seminars</h3>
+      <p>Expert-led discussions</p>
+    </a>
+
+    <a href="hackathon.html" class="selector-card">
+      <h3>Hackathons</h3>
+      <p>Innovation challenges</p>
+    </a>
+
+    <a href="stem.html" class="selector-card">
+      <h3>STEM Fairs</h3>
+      <p>Science exhibitions</p>
+    </a>
+  </div>
+</section>
+
+<section class="form-section scroll-animate" id="application">
+  <h2>Event Hosting Application</h2>
+  <p class="form-intro">
+    Institutions may formally request us to organize an educational event.
+  </p>
+
+  <form class="event-form" id="eduForm">
+    <div class="form-group">
+      <label>Organization Name</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Contact Email</label>
+      <input type="email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Event Type</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Additional Information</label>
+      <textarea rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">Submit Application</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Educational Events</p>
+</footer>
+
+<script src="education.js"></script>
+</body>
+</html>

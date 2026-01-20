@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Concert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="festival.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="festival.js" defer></script>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero-festival scroll-animate delay-1">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Nova Concert</h1>
+        <p>Live Music, Lights, and Unforgettable Performances!</p>
+        <a href="#contact" class="btn-register">Join the Concert</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-festival scroll-animate delay-2">
+    <h2>Why Nova Concert</h2>
+    <p style="max-width:600px; text-align:left; margin-left:0;">
+        Nova Concert brings together world-class artists, passionate fans, and powerful sound systems
+        to create unforgettable live music experiences.
+    </p>
+</section>
+
+<!-- CONCERT HIGHLIGHTS -->
+<section class="festival-gallery scroll-animate delay-3">
+    <h2>Concert Highlights</h2>
+    <div class="gallery-grid">
+        <div class="floating-img">
+            <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" alt="Concert Stage">
+        </div>
+        <div class="floating-img">
+            <img src="https://images.unsplash.com/photo-1518972559570-0b7d35cde3c7" alt="Crowd Lights">
+        </div>
+        <div class="floating-img">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745" alt="Singer Performing">
+        </div>
+        <div class="floating-img">
+            <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae" alt="DJ Performance">
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE & SERVICES -->
+<section class="services-section scroll-animate delay-4">
+    <h2>What We Offer</h2>
+    <div class="services-grid">
+
+        <!-- Live Bands -->
+        <div class="service-card service-horizontal">
+            <div class="service-media">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Live Band">
+                <div class="animation-box anim-1"></div>
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-guitar"></i> Live Bands</h3>
+                <p>Enjoy electrifying performances by local and international bands.</p>
+            </div>
+        </div>
+
+        <!-- DJ Shows -->
+        <div class="service-card service-horizontal reverse">
+            <div class="service-media">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7" alt="DJ Show">
+                <div class="animation-box anim-2"></div>
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-headphones"></i> DJ Performances</h3>
+                <p>Dance all night with professional DJs, lights, and immersive sound.</p>
+            </div>
+        </div>
+
+        <!-- Acoustic Music -->
+        <div class="service-card service-horizontal">
+            <div class="service-media">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Acoustic Music">
+                <div class="animation-box anim-3"></div>
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-microphone"></i> Acoustic Sessions</h3>
+                <p>Relax with soulful acoustic performances in an intimate atmosphere.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section scroll-animate delay-5">
+    <h2>Concert Fans Love Nova</h2>
+    <div class="testimonial-card">
+        <p>"The energy, sound, and lights were absolutely incredible!"</p>
+        <span>— Music Fan</span>
+    </div>
+    <div class="testimonial-card">
+        <p>"One of the best live concert experiences I've ever had."</p>
+        <span>— Concert Attendee</span>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta-festival scroll-animate delay-6" id="contact">
+    <h2>Get Your Tickets Now!</h2>
+    <p>Don’t miss out on the biggest concert nights of the year.</p>
+    <a href="#" class="btn-register">Buy Tickets</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Nova Concert. All Rights Reserved.</p>
+</footer>
+
+<!-- CONCERT BOOKING MODAL -->
+<div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <h2>Book Your Concert Experience</h2>
+        <p>Tell us your preferences and we’ll reserve your tickets.</p>
+
+        <form id="festivalBookingForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Artist / Band Name" required>
+            <input type="date" required>
+
+            <select required>
+                <option value="">Concert Type</option>
+                <option>Live Band</option>
+                <option>DJ Night</option>
+                <option>Acoustic</option>
+            </select>
+
+            <textarea placeholder="Special Requests" rows="4" required></textarea>
+            <button type="submit" class="btn-register">Submit Booking</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

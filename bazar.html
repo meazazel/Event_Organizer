@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Bazar & Market Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bazar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="bazar.js" defer></script>
+</head>
+<body>
+
+<div class="hero-content hero-text-bg">
+    <h1>Global Bazar & Market Experience</h1>
+    <p>Culture • Trade • Tradition • Modern Marketplace</p>
+    <a href="#contact" class="btn-register">Explore the Bazar</a>
+</div>
+
+
+<!-- ABOUT -->
+<section class="about-conference scroll-animate delay-2">
+    <h2>Why Our Bazar</h2>
+    <p>
+        Our bazar brings together culture, commerce, and community. From handmade crafts
+        to fresh produce and fashion, we create vibrant market experiences that attract
+        visitors and boost local businesses.
+    </p>
+</section>
+
+<!-- BAZAR GALLERY -->
+<section class="conference-gallery scroll-animate delay-3">
+    <h2>Bazar Highlights</h2>
+    <div class="gallery-grid">
+        <div class="floating-img">
+            <img src="C:\Users\M\Desktop\businnes\bazar up.jpg " alt="Open Market">
+        </div>
+        <div class="floating-img">
+            <img src="C:\Users\M\Desktop\businnes\food.jpg" alt="Street Food">
+        </div>
+        <div class="floating-img">
+            <img src="C:\Users\M\Desktop\businnes\food1.jpg" alt="Colorful Spices">
+        </div>
+        <div class="floating-img">
+            <img src="C:\Users\M\Desktop\businnes\bazar up1.jpg" alt="Handmade Crafts">
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section scroll-animate delay-4">
+    <h2>What We Offer</h2>
+    <div class="services-grid">
+
+        <div class="service-card service-horizontal">
+            <div class="service-media">
+                <img src="C:\Users\M\Desktop\businnes\space.jpg" alt="Vendor Spaces">
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-store"></i> Vendor Spaces</h3>
+                <p>Well-organized stalls for artisans, farmers, designers, and food vendors.</p>
+            </div>
+        </div>
+
+        <div class="service-card service-horizontal reverse">
+            <div class="service-media">
+                <img src="C:\Users\M\Desktop\businnes\live trading.jpg" alt="Live Trading">
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-handshake"></i> Live Trading</h3>
+                <p>Interactive buying and selling experiences that create real market energy.</p>
+            </div>
+        </div>
+
+        <div class="service-card service-horizontal">
+            <div class="service-media">
+                <img src="C:\Users\M\Desktop\businnes\bazarcultur.jpg" alt="Cultural Events">
+            </div>
+            <div class="service-content">
+                <h3><i class="fa fa-music"></i> Cultural Events</h3>
+                <p>Music, food tasting, fashion, and cultural performances that attract crowds.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section scroll-animate delay-5">
+    <h2>What Visitors Say</h2>
+
+    <div class="testimonial-card">
+        <p>"The bazar felt alive! Amazing products and beautiful atmosphere."</p>
+        <span>— Amanuel Tesfaye</span>
+    </div>
+
+    <div class="testimonial-card">
+        <p>"A perfect mix of tradition and modern shopping."</p>
+        <span>— Hana Mekonnen</span>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-conference scroll-animate delay-6" id="contact">
+    <h2>Want to Join the Bazar?</h2>
+    <p>Register as a vendor or explore upcoming market events.</p>
+    <a href="#" class="btn-register">Join Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Global Bazar Experience. All Rights Reserved.</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <h2>Bazar Registration</h2>
+        <p>Fill the form to join our bazar.</p>
+
+        <form id="conferenceBookingForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Business / Product Type" required>
+            <input type="date" required>
+
+            <select required>
+                <option value="">Participant Type</option>
+                <option>Vendor</option>
+                <option>Visitor</option>
+                <option>Performer</option>
+            </select>
+
+            <textarea placeholder="Additional Details" rows="4" required></textarea>
+            <button type="submit" class="btn-register">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

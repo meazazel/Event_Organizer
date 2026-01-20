@@ -1,0 +1,351 @@
+/* =============================== GLOBAL RESET ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F5F5F7;
+    color: #2C2C2C;
+    line-height: 1.6;
+}
+
+/* =============================== THEME COLORS ================================ */
+:root {
+    
+    --cream: #FFF8E1;
+    --primary: rgb(255, 0, 221);          /* Main theme color */
+    --primary-light: rgb(255, 120, 235);
+    --text-light: #E6C8FF;
+}
+
+/* =============================== HERO SECTIONS ================================ */
+.hero {
+    height: 75vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 650px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+/* =============================== BUTTONS ================================ */
+.btn {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--text-light);
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 16px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-light);
+    transform: translateY(-3px);
+}
+
+/* =============================== SECTIONS ================================ */
+section {
+    padding: 70px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: var(--brown);
+    font-weight: bold;
+}
+
+/* =============================== ABOUT ================================ */
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* =============================== GALLERY / VENUE ================================ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    transition: transform 0.35s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* =============================== SERVICES ================================ */
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 45px;
+}
+
+.service-card {
+    display: flex;
+    gap: 25px;
+    background: var(--cream);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    transition: 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-card img {
+    width: 40%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service-info h3 {
+    font-size: 24px;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+/* =============================== TESTIMONIALS ================================ */
+.testimonials {
+    margin-top: 40px;
+}
+
+.testimonial {
+    background: var(--cream);
+    padding: 24px;
+    margin: 14px auto;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.17);
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--brown);
+}
+
+/* =============================== CTA ================================ */
+.cta {
+    background: var(--cream);
+    
+    text-align: center;
+    padding: 70px 10%;
+    border-radius: 18px;
+    --text-light: #E6C8FF;
+}
+
+.cta .btn {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+/* =============================== EVENT SELECTOR (index.html) ================================ */
+.event-selector {
+    text-align: center;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background: var(--cream);
+    border: 2px solid var(--brown);
+    padding: 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--brown);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.event-card:hover {
+    background: var(--gold);
+    color: var(--dark-brown);
+    transform: translateY(-6px);
+}
+
+.event-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-card span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* =============================== BOOKING PAGE ================================ */
+.booking-container {
+    max-width: 600px;
+    margin: auto;
+    background: var(--cream);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.booking-container h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: var(--brown);
+}
+
+.booking-container form input,
+.booking-container form select,
+.booking-container form textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.booking-container form button {
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+/* =============================== FOOTER ================================ */
+footer {
+    background: var(--primary-light);
+    color: var(--text-light);
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* =============================== RESPONSIVE ================================ */
+@media (max-width: 800px) {
+    .service-card {
+        flex-direction: column;
+    }
+    .service-card img {
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 34px;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--cream);
+    padding: 30px;
+    border-radius: 14px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
