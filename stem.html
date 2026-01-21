@@ -1,97 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>STEM Fairs</title>
-<link rel="stylesheet" href="education.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>STEM Fairs</title>
+    <link rel="stylesheet" href="education.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="education.html">Home</a>
+        <a href="academic.html">Academic</a>
+        <a href="seminar.html">Seminars</a>
+        <a href="hackathon.html">Hackathons</a>
+        <a href="stem.html">STEM Fairs</a>
+      </nav>
+    </header>
 
-<header>
-<nav>
-  <a href="education.html">Home</a>
-  <a href="academic.html">Academic</a>
-  <a href="seminar.html">Seminars</a>
-  <a href="hackathon.html">Hackathons</a>
-  <a href="stem.html">STEM Fairs</a>
-</nav>
-</header>
+    <section class="hero-conference scroll-animate">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>STEM Fairs</h1>
+        <p>Science • Technology • Engineering • Mathematics</p>
+        <br />
+        <a href="#application" class="btn-register">Host a STEM Fair</a>
+      </div>
+    </section>
 
-<section class="hero-conference scroll-animate">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>STEM Fairs</h1>
-    <p>Science • Technology • Engineering • Mathematics</p><br>
-    <a href="#application" class="btn-register">Host a STEM Fair</a>
-  </div>
-</section>
+    <section class="about-conference scroll-animate">
+      <h2>Inspiring Innovation</h2>
+      <p>
+        STEM fairs encourage young innovators to showcase experiments,
+        prototypes, and research projects in an interactive educational
+        environment.
+      </p>
+    </section>
 
-<section class="about-conference scroll-animate">
-  <h2>Inspiring Innovation</h2>
-  <p>
-    STEM fairs encourage young innovators to showcase
-    experiments, prototypes, and research projects
-    in an interactive educational environment.
-  </p>
-</section>
+    <section class="conference-gallery scroll-animate">
+      <div class="gallery-grid">
+        <div class="floating-img"><img src="img/stem1.webp" /></div>
+        <div class="floating-img"><img src="img/stem2.webp" /></div>
+        <div class="floating-img"><img src="img/stem3.webp" /></div>
+        <div class="floating-img"><img src="img/stem4.webp" /></div>
+      </div>
+    </section>
 
-<section class="conference-gallery scroll-animate">
-  <div class="gallery-grid">
-    <div class="floating-img"><img src="stem1.webp"></div>
-    <div class="floating-img"><img src="ste,2.webp"></div>
-    <div class="floating-img"><img src="ste,3.webp"></div>
-    <div class="floating-img"><img src="stem.webp"></div>
-  </div>
-</section>
+    <section class="cta-conference scroll-animate">
+      <h2>Empower Future Scientists</h2>
+      <br />
+      <a href="#application" class="btn-register">Request a Fair</a>
+    </section>
 
-<section class="cta-conference scroll-animate">
-  <h2>Empower Future Scientists</h2><br>
-  <a href="#application" class="btn-register">Request a Fair</a>
-</section>
+    <section class="form-section scroll-animate" id="application">
+      <h2>STEM Fair Application</h2>
+      <p class="form-intro">Apply to host a science & technology exhibition.</p>
 
-<section class="form-section scroll-animate" id="application">
-  <h2>STEM Fair Application</h2>
-  <p class="form-intro">Apply to host a science & technology exhibition.</p>
+      <form class="event-form" id="stemForm">
+        <div class="form-group">
+          <label>School / Institution Name</label>
+          <input type="text" required />
+        </div>
 
-  <form class="event-form" id="stemForm">
-    <div class="form-group">
-      <label>School / Institution Name</label>
-      <input type="text" required>
-    </div>
+        <div class="form-group">
+          <label>Contact Email</label>
+          <input type="email" required />
+        </div>
 
-    <div class="form-group">
-      <label>Contact Email</label>
-      <input type="email" required>
-    </div>
+        <div class="form-group">
+          <label>Fair Theme</label>
+          <input type="text" required />
+        </div>
 
-    <div class="form-group">
-      <label>Fair Theme</label>
-      <input type="text" required>
-    </div>
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date" required />
+        </div>
 
-    <div class="form-group">
-      <label>Preferred Date</label>
-      <input type="date" required>
-    </div>
+        <div class="form-group">
+          <label>Expected Participants</label>
+          <input type="number" required />
+        </div>
 
-    <div class="form-group">
-      <label>Expected Participants</label>
-      <input type="number" required>
-    </div>
+        <div class="form-group">
+          <label>Additional Notes</label>
+          <textarea rows="4"></textarea>
+        </div>
 
-    <div class="form-group">
-      <label>Additional Notes</label>
-      <textarea rows="4"></textarea>
-    </div>
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </form>
+    </section>
 
-    <button type="submit" class="btn-submit">Submit Application</button>
-  </form>
-</section>
+    <footer>
+      <p>© 2026 Educational Events</p>
+    </footer>
 
-<footer>
-  <p>© 2026 Educational Events</p>
-</footer>
-
-<script src="stem.js"></script>
-</body>
+    <script src="stem.js"></script>
+  </body>
 </html>
